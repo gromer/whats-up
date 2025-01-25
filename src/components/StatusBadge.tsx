@@ -13,29 +13,29 @@ const StatusBadge: React.FC<StatusBadgeProps> = ({ status, className = '' }) => 
       case 'healthy':
         return {
           icon: CheckCircle,
-          color: 'text-green-500',
-          bg: 'bg-green-100',
+          color: 'text-green-500 dark:text-green-400',
+          bg: 'bg-green-100 dark:bg-green-900/30',
           label: 'Healthy'
         };
       case 'warning':
         return {
           icon: AlertTriangle,
-          color: 'text-yellow-500',
-          bg: 'bg-yellow-100',
+          color: 'text-yellow-500 dark:text-yellow-400',
+          bg: 'bg-yellow-100 dark:bg-yellow-900/30',
           label: 'Warning'
         };
       case 'critical':
         return {
           icon: XCircle,
-          color: 'text-red-500',
-          bg: 'bg-red-100',
+          color: 'text-red-500 dark:text-red-400',
+          bg: 'bg-red-100 dark:bg-red-900/30',
           label: 'Critical'
         };
       default:
         return {
           icon: HelpCircle,
-          color: 'text-gray-500',
-          bg: 'bg-gray-100',
+          color: 'text-gray-500 dark:text-gray-400',
+          bg: 'bg-gray-100 dark:bg-gray-800',
           label: 'Unknown'
         };
     }
